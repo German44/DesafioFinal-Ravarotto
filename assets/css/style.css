@@ -36,14 +36,14 @@ nav ul a {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 6px;
-    padding: 5px;
+    padding: 5px;;
 }
 
 .nav__links.active a,
 .nav__links a:hover {
     color: #EE8481;
     background-color: #6B3B3A;
-    transition: .4s ease-in;
+    transition: .4s ease;
 }
 
 nav ul li {
@@ -98,16 +98,23 @@ footer{
 
     .nav__list {
         position: fixed;
-        width: 80%;
+        width: 100%;
         height: 50vh;
         background-color:#ee8481;
-        border-radius: 8px;
         top: 80px;
-        text-align: center;
         left: -100%;/*& esconde a la izquierda el menu */
         transition: all .5s;
         display: grid;
+        justify-content:left;
         z-index: 1;
+    }
+    nav ul a {
+        text-decoration: none;
+        color: #7a201d;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        padding-right: 50px;
     }
 
     #check:checked ~.nav__list {
