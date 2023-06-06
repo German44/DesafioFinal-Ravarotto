@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/logo sin fondo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fd4774874.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css".css">
+    <title>Argentum Joyas</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="nav__label"><i
+                class="fa-solid fa-bars"></i></label><!-- & etiqueta q esconde el checkbox-->
+        <a href="./index.html" class="logo"><img src="./assets/img/logo sin fondo.png" alt="logo" class="logo__img"></a>
+        <ul class="nav__list">
+            <li class="nav__links active"><a href="./index.html">Inicio</a></li>
+            <li class="nav__links"><a href="#">Joyas</a></li>
+            <li class="nav__links"><a href="#">Contacto</a></li>
+            <li class="nav__links"><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--& carrusel bootstrap -->
+        <div class="container-fluid ">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/alianza2.jpg" class="d-block w-100 carousel-size" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/anillo2.jpg" class="d-block w-100 carousel-size" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/colgante3.jpg" class="d-block w-100 carousel-size" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+       
+    </section>
+    <footer>
+        foot
+    </footer>
+
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</html>
