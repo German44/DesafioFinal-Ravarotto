@@ -8,15 +8,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8fd4774874.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/bootstrap.css".css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" .css">
     <title>Argentum Joyas</title>
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="nav__label"><i
-                class="fa-solid fa-bars"></i></label><!-- & etiqueta q esconde el checkbox-->
+    <!--& Barra de Navegacion responsive Bootstrap -->
+    <nav class="navbar bg-body-tertiary fixed-top d-sm-none " style="background-color: #ee8481;">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/img/logo sin fondo.png" alt="logo"
+                    class="logo__img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" style="background-color: #ee8481;" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/img/logo sin fondo.png"
+                            alt="logo" class="logo__img"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Joyas
+                            </a>
+                            <ul class="dropdown-menu" style="background-color: #ee8481;" >
+                                <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                <li><a class="dropdown-item" href="#">Alianzas</a></li>
+                                <li><a class="dropdown-item" href="#">Colgantes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--& Barra Navegacion Responsive  -->
+    <nav class="navBar">
         <a href="./index.html" class="logo"><img src="./assets/img/logo sin fondo.png" alt="logo" class="logo__img"></a>
         <ul class="nav__list">
             <li class="nav__links active"><a href="./index.html">Inicio</a></li>
@@ -25,13 +66,14 @@
             <li class="nav__links"><a href="#">Nosotros</a></li>
         </ul>
     </nav>
+
     <section>
         <!--& carrusel bootstrap -->
-        <div class="container-fluid ">
+        <div class="container-fluid  ">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
@@ -61,7 +103,7 @@
             </div>
 
         </div>
-       
+
     </section>
     <footer>
         <div class="footer"></div>
