@@ -92,23 +92,23 @@ footer{
 }
  /*& version Mobile */
 @media(max-width:470px) {
-    .nav__label {
+    /* .nav__label {
         display: block;
     }
-
-    .nav__list {
+ */
+    /* .nav__list {
         position: fixed;
         width: 100%;
         height: 50vh;
         background-color:#ee8481;
         top: 80px;
-        left: -100%;/*& esconde a la izquierda el menu */
+        left: -100%;
         transition: all .5s;
         display: grid;
         justify-content:left;
         z-index: 1;
-    }
-    nav ul a {
+    } */
+    /* nav ul a {
         text-decoration: none;
         color: #7a201d;
         font-size: 15px;
@@ -119,5 +119,5 @@ footer{
 
     #check:checked ~.nav__list {
         left: 0;
-    }
+    } */
 }
