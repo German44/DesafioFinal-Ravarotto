@@ -3,8 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /*& estilo nav bar */
-.navBar{
+.navBar {
     background-color: #ee8481;
     width: 100%;
     height: 80px;
@@ -20,7 +21,8 @@
 }
 
 .logo__img {
-    height: 40px;/*& centrado 40 + 20 padding */
+    height: 40px;
+    /*& centrado 40 + 20 padding */
 }
 
 .navBar ul {
@@ -36,7 +38,8 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 6px;
-    padding: 5px;;
+    padding: 5px;
+    ;
 }
 
 .nav__links.active a,
@@ -52,26 +55,60 @@
     margin: 0 10px;
 }
 
-.navbar bg-body-tertiary fixed-top{
+.navbar bg-body-tertiary fixed-top {
     display: none;
 }
+
 /*& estilo section */
-.carousel-size{
+.carousel-size {
     object-fit: cover;
-    height: 75vh;
-    z-index: -1;
+    height: 70vh;
 }
+
 /*& comienzo estilo footer */
-footer{
-    height: 25vh;
+
+footer {
+    height: 18vh;
+    margin-top: 15px;
     background-color: #ee8481;
 }
- /*& version tablets */
+
+.container_footer {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.sociales,
+.whatsapps {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.footer_logo {
+    color: #7a201d;
+    font-size: 40px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #F0CBCA;
+
+}
+
+/*& version tablets */
 @media(max-width:900px) {
-    .navbar bg-body-tertiary fixed-top{
+    .navbar bg-body-tertiary fixed-top {
         display: none;
     }
-        .logo {
+
+    .logo {
         padding-left: 15px;
     }
 
@@ -84,10 +121,27 @@ footer{
         padding: 5px;
     }
 }
- /*& version Mobile */
-@media(max-width:570px) {
 
-.navBar{
-    display: none;
-}
+/*& version Mobile */
+@media(max-width:574px) {
+
+    .navBar {
+        display: none;
+    }
+
+    .container_footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80%;
+        justify-content: space-evenly;
+    }
+
+    .copyright {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F0CBCA;
+
+    }
 }
