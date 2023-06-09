@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 /*& estilo nav bar */
@@ -59,11 +60,67 @@
     display: none;
 }
 
-/*& estilo section */
+/*& estilo section index */
 .carousel-size {
     object-fit: cover;
     height: 70vh;
 }
+/*& estilo section joyas */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    backdrop-filter: blur(1px);
+    margin: 10px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.cardImg {
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    border: #7a201d 3px solid;
+
+}
+
+.card h3,
+p {
+    padding: 10px;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #7a201d;
+    color: #ee8481;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    background-color: antiquewhite;
+    transition: 0.8s ease;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px black
+}
+
+.h2Joyas {
+    text-align: center;
+    margin: 30px;
+}
+
+
+
 
 /*& comienzo estilo footer */
 
