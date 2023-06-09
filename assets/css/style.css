@@ -65,16 +65,23 @@
     object-fit: cover;
     height: 70vh;
 }
+
 /*& estilo section joyas */
 
-.container {
+.body_joyas {
+    background-image: url(../img/bagr.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.container_card {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.card {
-    backdrop-filter: blur(1px);
+.section_card {
+    backdrop-filter: blur(8px);
     margin: 10px;
     width: 350px;
     border-radius: 15px;
@@ -90,13 +97,13 @@
 
 }
 
-.card h3,
+.section_card h3,
 p {
     padding: 10px;
     text-align: center;
 }
 
-.card a {
+.section_card a {
     text-decoration: none;
     background-color: #7a201d;
     color: #ee8481;
@@ -106,7 +113,7 @@ p {
     border-radius: 0 0 15px 15px;
 }
 
-.card:hover {
+.section_card:hover {
     transform: scale(1.04);
     background-color: antiquewhite;
     transition: 0.8s ease;
@@ -161,6 +168,8 @@ footer {
 
 /*& version tablets */
 @media(max-width:900px) {
+
+    /** responsive nav bar */
     .navbar bg-body-tertiary fixed-top {
         display: none;
     }
@@ -177,15 +186,24 @@ footer {
         border-radius: 6px;
         padding: 5px;
     }
+
+    /** responsive joyas*/
+    .container_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /*& version Mobile */
 @media(max-width:574px) {
 
+    /** responsive nav bar */
     .navBar {
         display: none;
     }
 
+    /** responsive footer */
     .container_footer {
         display: flex;
         flex-wrap: wrap;
@@ -199,6 +217,13 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         background-color: #F0CBCA;
-
     }
+
+    /** responsive joyas*/
+    .container_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
