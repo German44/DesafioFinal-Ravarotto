@@ -127,7 +127,173 @@ p {
 }
 
 
+/*& Carga de fotos */
 
+/* Alianzas */
+.joya1 {
+    background-image: url(../img/alianza1.jpg);
+}
+
+.joya2 {
+    background-image: url(../img/alianza2.jpg);
+}
+
+.joya3 {
+    background-image: url(../img/alianza3.jpg);
+}
+
+/* Anillos */
+.joya4 {
+    background-image: url(../img/anillo1.jpg);
+}
+
+.joya5 {
+    background-image: url(../img/anillo2.jpg);
+}
+
+.joya6 {
+    background-image: url(../img/anillo3.jpg);
+}
+
+/* Colgantes */
+.joya7 {
+    background-image: url(../img/colgante1.jpg);
+}
+
+.joya8 {
+    background-image: url(../img/colgante2.jpg);
+}
+
+.joya9 {
+    background-image: url(../img/colgante3.jpg);
+}
+
+/*& estilos pagina contactos */
+
+.tituloContacto {
+    text-align: center;
+    color: #7a201d;
+    font-size: larger;
+    padding: 40px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.textoContacto {
+    text-align: center;
+    font-size: larger;
+    color: #7a201d;
+    padding: 10px 20px;
+}
+
+.formContacto {
+
+    color: blue;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: #7a201d solid 1px;
+}
+
+.botonFormulario {
+    color: rgb(247, 220, 225);
+    background-color: #7a201d;
+    margin: auto;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botonFormulario:hover {
+    background-color: #ee8481;
+    color: #7a201d;
+}
+
+/*& Estilo pagina nosotros */
+
+
+.sectionNosotros {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 100px 20px;
+    border-radius: 15px;
+}
+
+.nosotros {
+    color: #7a201d;
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.articleNosotros {
+    display: flex;
+    align-items: center;
+}
+
+.articleImg {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.articleText1 {
+    color: #7a201d;
+    font-size: 25px;
+}
+
+/*& estilo pagina talles */
+
+.articleTalles {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    margin: -340px 20px 20px 550px;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+}
+
+.medir {
+    color: #7a201d;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.medirText {
+    color: #7a201d;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.talleImg {
+    height: 400px;
+    margin-left: 200px;
+}
+
+.instruccion {
+    color: #7a201d;
+    list-style: lower-roman;
+
+}
+
+.instruccion1 {
+    padding: 15px;
+}
 
 /*& comienzo estilo footer */
 
