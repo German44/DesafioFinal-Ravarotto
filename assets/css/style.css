@@ -428,5 +428,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+/** responsive contactos */
+.section_contacto{
+    height: auto;
+}
 
 }
