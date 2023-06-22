@@ -1,0 +1,368 @@
+//* Ficheros
+
+@import "cards";
+@import "variables";
+@import "bootstrap";
+
+//* Mixins
+
+@mixin body_background () {
+    background-image: url(../assets/img/bagr.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin display_flex (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+//* estilo nav bar
+
+.navBar {
+    background-color: $color-principal;
+    width: 100%;
+    height: 80px;
+
+    ul {
+        float: right;
+        list-style: none;
+        margin-right: 30px;
+
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 10px;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 6px;
+                padding: 5px;
+
+                &:hover {
+                    color: $color-principal;
+                    background-color: $color-text;
+                    transition: .4s ease;
+                }
+            }
+        }
+    }
+
+}
+
+.logo {
+    position: absolute;
+    padding: 20px 50px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.logo__img {
+    height: 40px;
+}
+
+//* Fondos para todas las pages
+
+.body_joyas {
+    @include body_background
+}
+
+//* estilos pagina contactos
+
+.section_contacto {
+    height: 80vh;
+}
+
+.tituloContacto {
+    text-align: center;
+    color: $color-text;
+    font-size: larger;
+    padding: 40px;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.textoContacto {
+    text-align: center;
+    font-size: larger;
+    color: $color-text;
+    padding: 10px 20px;
+}
+
+.formContacto {
+
+    color: blue;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: $color-text solid 1px;
+}
+
+.botonFormulario {
+    color: $color-secundario;
+    background-color: $color-text;
+    margin: auto;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-principal;
+        color: $color-text;
+    }
+
+}
+
+
+//* Estilo pagina nosotros
+
+.sectionNosotros {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 100px 20px;
+    border-radius: 15px;
+    height: 70vh;
+}
+
+.nosotros {
+    color: $color-text;
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.articleNosotros {
+    display: flex;
+    align-items: center;
+}
+
+.articleImg {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.articleText1 {
+    color: $color-text;
+    font-size: 25px;
+}
+
+//* estilo pagina talles
+
+.section_talles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 70vh;
+}
+
+.articleTalles {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    width: 600px;
+    height: auto;
+}
+
+.medir {
+    color: $color-text;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.medirText {
+    color: $color-text;
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.talleImg {
+    height: 400px;
+}
+
+.instruccion {
+    color: $color-text;
+    list-style: lower-alpha;
+
+}
+
+.instruccion1 {
+    padding: 15px;
+}
+
+//* comienzo estilo footer
+
+footer {
+    height: 18vh;
+    margin-top: 15px;
+    background-color: $color-principal;
+}
+
+.container_footer {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.sociales,
+.whatsapps {
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.footer_logo {
+    color: $color-text;
+    font-size: 40px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: $color-secundario;
+
+}
+
+//* version tablets
+
+@media(max-width:900px) {
+
+    /** responsive nav bar */
+    .navbar bg-body-tertiary fixed-top {
+        display: none;
+    }
+
+    .logo {
+        padding-left: 15px;
+    }
+
+    .navBar ul a {
+        text-decoration: none;
+        color: $color-text;
+        font-size: 15px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        padding: 5px;
+    }
+
+    /** responsive joyas*/
+    .container_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    //* responsive nosotros
+
+    .articleNosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionNosotros {
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        margin: 100px 20px;
+        border-radius: 15px;
+        height: auto;
+    }
+}
+
+//* version Mobile  570px medida minima bootstrap
+
+@media(max-width:570px) {
+
+    //* responsive nav bar 
+    .navBar {
+        display: none;
+    }
+
+    //* responsive footer 
+    .container_footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80%;
+        justify-content: space-evenly;
+    }
+
+    .copyright {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: $color-secundario;
+    }
+
+    //* responsive joyas
+
+    .container_card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    //* responsive talles
+
+    .section_talles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    //* responsive nosotros
+
+    .articleNosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    //* responsive contactos
+
+    .section_contacto {
+        height: auto;
+    }
+
+}

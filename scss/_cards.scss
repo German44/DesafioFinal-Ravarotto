@@ -1,0 +1,97 @@
+@import "variables";
+
+.container_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section_card {
+    backdrop-filter: blur(8px);
+    margin: 10px;
+    width: 350px;
+    border-radius: 15px;
+
+    &:hover {
+        transform: scale(1.04);
+        background-color: $color-secundario;
+        transition: 0.8s ease;
+        cursor: pointer;
+        box-shadow: 0px 10px 30px -5px black
+    }
+
+    a {
+        text-decoration: none;
+        background-color: $color-text;
+        color: $color-principal;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        border-radius: 0 0 15px 15px;
+
+    }
+
+
+    h3,
+    p {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.cardImg {
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    border: $color-text 3px solid;
+
+}
+
+.h2Joyas {
+    text-align: center;
+    margin: 30px;
+}
+
+
+/*& Carga de fotos */
+
+/* Alianzas */
+.joya1 {
+    background-image: url(../assets/img/alianza1.jpg);
+}
+
+.joya2 {
+    background-image: url(../assets/img/alianza2.jpg);
+}
+
+.joya3 {
+    background-image: url(../assets/img/alianza3.jpg);
+}
+
+/* Anillos */
+.joya4 {
+    background-image: url(../assets/img/anillo1.jpg);
+}
+
+.joya5 {
+    background-image: url(../assets/img/anillo2.jpg);
+}
+
+.joya6 {
+    background-image: url(../assets/img/anillo3.jpg);
+}
+
+/* Colgantes */
+.joya7 {
+    background-image: url(../assets/img/colgante1.jpg);
+}
+
+.joya8 {
+    background-image: url(../assets/img/colgante2.jpg);
+}
+
+.joya9 {
+    background-image: url(../assets/img/colgante3.jpg);
+}

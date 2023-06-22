@@ -1,79 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
-}
-
-/*& estilo nav bar */
-.navBar {
-    background-color: #ee8481;
-    width: 100%;
-    height: 80px;
-}
-
-.logo {
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.logo__img {
-    height: 40px;
-    /*& centrado 40 + 20 padding */
-}
-
-.navBar ul {
-    float: right;
-    list-style: none;
-    margin-right: 30px;
-}
-
-.navBar ul a {
-    text-decoration: none;
-    color: #7a201d;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 6px;
-    padding: 5px;
-    ;
-}
-
-.nav__links.active a,
-.nav__links a:hover {
-    color: #EE8481;
-    background-color: #6B3B3A;
-    transition: .4s ease;
-}
-
-.navBar ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 10px;
-}
-
-.navbar bg-body-tertiary fixed-top {
-    display: none;
-}
-
-/*& estilo carrusel bootstraps */
-.carousel-size {
-    object-fit: cover;
-    height: 70vh;
-}
-
-/*& estilo section joyas */
-
-.body_joyas {
-    background-image: url(../img/bagr.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
 .container_card {
     display: flex;
     justify-content: center;
@@ -87,25 +11,17 @@
     border-radius: 15px;
 }
 
-.cardImg {
-    height: 300px;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-    border: #7a201d 3px solid;
-
-}
-
-.section_card h3,
-p {
-    padding: 10px;
-    text-align: center;
+.section_card:hover {
+    transform: scale(1.04);
+    background-color: #F0CBCA;
+    transition: 0.8s ease;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px black;
 }
 
 .section_card a {
     text-decoration: none;
-    background-color: #7a201d;
+    background-color: #6B3B3A;
     color: #ee8481;
     display: block;
     padding: 5px;
@@ -113,12 +29,19 @@ p {
     border-radius: 0 0 15px 15px;
 }
 
-.section_card:hover {
-    transform: scale(1.04);
-    background-color: antiquewhite;
-    transition: 0.8s ease;
-    cursor: pointer;
-    box-shadow: 0px 10px 30px -5px black
+.section_card h3,
+.section_card p {
+    padding: 10px;
+    text-align: center;
+}
+
+.cardImg {
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    border: #6B3B3A 3px solid;
 }
 
 .h2Joyas {
@@ -126,55 +49,120 @@ p {
     margin: 30px;
 }
 
-
 /*& Carga de fotos */
-
 /* Alianzas */
 .joya1 {
-    background-image: url(../img/alianza1.jpg);
+    background-image: url(../assets/img/alianza1.jpg);
 }
 
 .joya2 {
-    background-image: url(../img/alianza2.jpg);
+    background-image: url(../assets/img/alianza2.jpg);
 }
 
 .joya3 {
-    background-image: url(../img/alianza3.jpg);
+    background-image: url(../assets/img/alianza3.jpg);
 }
 
 /* Anillos */
 .joya4 {
-    background-image: url(../img/anillo1.jpg);
+    background-image: url(../assets/img/anillo1.jpg);
 }
 
 .joya5 {
-    background-image: url(../img/anillo2.jpg);
+    background-image: url(../assets/img/anillo2.jpg);
 }
 
 .joya6 {
-    background-image: url(../img/anillo3.jpg);
+    background-image: url(../assets/img/anillo3.jpg);
 }
 
 /* Colgantes */
 .joya7 {
-    background-image: url(../img/colgante1.jpg);
+    background-image: url(../assets/img/colgante1.jpg);
 }
 
 .joya8 {
-    background-image: url(../img/colgante2.jpg);
+    background-image: url(../assets/img/colgante2.jpg);
 }
 
 .joya9 {
-    background-image: url(../img/colgante3.jpg);
+    background-image: url(../assets/img/colgante3.jpg);
 }
 
-/*& estilos pagina contactos */
-.section_contacto{
+/*& estilo carrusel bootstraps */
+.carousel-size {
+    object-fit: cover;
+    height: 70vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+.navBar {
+    background-color: #ee8481;
+    width: 100%;
+    height: 80px;
+}
+
+.navBar ul {
+    float: right;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navBar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: #6B3B3A;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.navBar ul li a:hover {
+    color: #ee8481;
+    background-color: #6B3B3A;
+    transition: 0.4s ease;
+}
+
+.logo {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo__img {
+    height: 40px;
+}
+
+.body_joyas {
+    background-image: url(../assets/img/bagr.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section_contacto {
     height: 80vh;
 }
+
 .tituloContacto {
     text-align: center;
-    color: #7a201d;
+    color: #6B3B3A;
     font-size: larger;
     padding: 40px;
     font-size: 24px;
@@ -184,12 +172,11 @@ p {
 .textoContacto {
     text-align: center;
     font-size: larger;
-    color: #7a201d;
+    color: #6B3B3A;
     padding: 10px 20px;
 }
 
 .formContacto {
-
     color: blue;
     width: 400px;
     background: rgba(255, 255, 255, 0.3);
@@ -206,12 +193,12 @@ p {
     margin-bottom: 15px;
     margin-right: 10px;
     border-radius: 5px;
-    border: #7a201d solid 1px;
+    border: #6B3B3A solid 1px;
 }
 
 .botonFormulario {
-    color: rgb(247, 220, 225);
-    background-color: #7a201d;
+    color: #F0CBCA;
+    background-color: #6B3B3A;
     margin: auto;
     width: 100%;
     border: none;
@@ -221,21 +208,19 @@ p {
 
 .botonFormulario:hover {
     background-color: #ee8481;
-    color: #7a201d;
+    color: #6B3B3A;
 }
-
-/*& Estilo pagina nosotros */
 
 .sectionNosotros {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     margin: 100px 20px;
     border-radius: 15px;
-    height:70vh;
+    height: 70vh;
 }
 
 .nosotros {
-    color: #7a201d;
+    color: #6B3B3A;
     font-size: 24px;
     margin-bottom: 80px;
     text-align: center;
@@ -253,11 +238,10 @@ p {
 }
 
 .articleText1 {
-    color: #7a201d;
+    color: #6B3B3A;
     font-size: 25px;
 }
 
-/*& estilo pagina talles */
 .section_talles {
     display: flex;
     justify-content: space-around;
@@ -275,7 +259,7 @@ p {
 }
 
 .medir {
-    color: #7a201d;
+    color: #6B3B3A;
     text-align: center;
     text-decoration: underline;
     margin-top: 30px;
@@ -283,9 +267,10 @@ p {
 }
 
 .medirText {
-    color: #7a201d;
+    color: #6B3B3A;
     font-size: 18px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .talleImg {
@@ -293,16 +278,13 @@ p {
 }
 
 .instruccion {
-    color: #7a201d;
-    list-style: lower-roman;
-
+    color: #6B3B3A;
+    list-style: lower-alpha;
 }
 
 .instruccion1 {
     padding: 15px;
 }
-
-/*& comienzo estilo footer */
 
 footer {
     height: 18vh;
@@ -323,11 +305,10 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 15px;
-
 }
 
 .footer_logo {
-    color: #7a201d;
+    color: #6B3B3A;
     font-size: 40px;
 }
 
@@ -336,11 +317,9 @@ footer {
     justify-content: space-between;
     padding: 5px;
     background-color: #F0CBCA;
-
 }
 
-/*& version tablets */
-@media(max-width:900px) {
+@media (max-width: 900px) {
 
     /** responsive nav bar */
     .navbar bg-body-tertiary fixed-top {
@@ -353,7 +332,7 @@ footer {
 
     .navBar ul a {
         text-decoration: none;
-        color: #7a201d;
+        color: #6B3B3A;
         font-size: 15px;
         text-transform: uppercase;
         border-radius: 6px;
@@ -366,31 +345,28 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-    /** responsive nosotros */
-    .articleNosotros{
+
+    .articleNosotros {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
+
     .sectionNosotros {
         background-color: rgba(255, 255, 255, 0.3);
         padding: 20px;
         margin: 100px 20px;
         border-radius: 15px;
-        height:auto;
+        height: auto;
     }
 }
 
-/*& version Mobile  570px medida minima bootstrap*/
-@media(max-width:570px) {
-
-    /** responsive nav bar */
+@media (max-width: 570px) {
     .navBar {
         display: none;
     }
 
-    /** responsive footer */
     .container_footer {
         display: flex;
         flex-wrap: wrap;
@@ -406,13 +382,11 @@ footer {
         background-color: #F0CBCA;
     }
 
-    /** responsive joyas*/
     .container_card {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-/** responsive talles */
 
     .section_talles {
         display: flex;
@@ -421,16 +395,17 @@ footer {
         align-items: center;
         height: 100vh;
     }
-    /** responsive nosotros*/
-.articleNosotros{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-/** responsive contactos */
-.section_contacto{
-    height: auto;
+
+    .articleNosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_contacto {
+        height: auto;
+    }
 }
 
-}
+/*# sourceMappingURL=style.css.map */

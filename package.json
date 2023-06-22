@@ -1,0 +1,15 @@
+{
+  "name": "desafio-iii",
+  "version": "1.0.0",
+  "description": "tercer desafio coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "german ravarotto",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.63.6"
+  }
+}
