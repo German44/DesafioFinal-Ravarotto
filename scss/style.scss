@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 }
 
-@mixin display_flex (){
+@mixin display_flex () {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,9 +178,8 @@
 //* estilo pagina talles
 
 .section_talles {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    //* Uso del MIXINS
+    @include display_flex();
     gap: 20px;
     height: 70vh;
 }
@@ -262,7 +261,7 @@ footer {
 
 //* version tablets
 
-@media(max-width:900px) {
+@media(max-width:1000px) {
 
     /** responsive nav bar */
     .navbar bg-body-tertiary fixed-top {
@@ -273,14 +272,17 @@ footer {
         padding-left: 15px;
     }
 
-    .navBar ul a {
-        text-decoration: none;
-        color: $color-text;
-        font-size: 15px;
-        text-transform: uppercase;
-        border-radius: 6px;
-        padding: 5px;
+    .navBar {
+        ul {
+            li {
+                a {
+                    font-size: 17px;
+                }
+            }
+        }
     }
+
+
 
     /** responsive joyas*/
     .container_card {
@@ -292,10 +294,9 @@ footer {
     //* responsive nosotros
 
     .articleNosotros {
-        display: flex;
+        //* MIXINS
+        @include display_flex();
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
     }
 
     .sectionNosotros {
@@ -316,7 +317,8 @@ footer {
         display: none;
     }
 
-    //* responsive footer 
+    //* responsive footer
+
     .container_footer {
         display: flex;
         flex-wrap: wrap;
@@ -343,20 +345,17 @@ footer {
     //* responsive talles
 
     .section_talles {
-        display: flex;
+        //* MIXINS
+        @include display_flex();
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
     }
 
     //* responsive nosotros
 
     .articleNosotros {
-        display: flex;
+        @include display_flex();
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
     }
 
     //* responsive contactos

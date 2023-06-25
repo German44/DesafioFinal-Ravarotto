@@ -1,411 +1,384 @@
 .container_card {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .section_card {
-    backdrop-filter: blur(8px);
-    margin: 10px;
-    width: 350px;
-    border-radius: 15px;
+  backdrop-filter: blur(8px);
+  margin: 10px;
+  width: 350px;
+  border-radius: 15px;
 }
-
 .section_card:hover {
-    transform: scale(1.04);
-    background-color: #F0CBCA;
-    transition: 0.8s ease;
-    cursor: pointer;
-    box-shadow: 0px 10px 30px -5px black;
+  transform: scale(1.04);
+  background-color: #F0CBCA;
+  transition: 0.8s ease;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px -5px black;
 }
-
 .section_card a {
-    text-decoration: none;
-    background-color: #6B3B3A;
-    color: #ee8481;
-    display: block;
-    padding: 5px;
-    text-align: center;
-    border-radius: 0 0 15px 15px;
+  text-decoration: none;
+  background-color: #6B3B3A;
+  color: #ee8481;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
 }
-
 .section_card h3,
 .section_card p {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 
 .cardImg {
-    height: 300px;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-    border: #6B3B3A 3px solid;
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  border: #6B3B3A 3px solid;
 }
 
 .h2Joyas {
-    text-align: center;
-    margin: 30px;
+  text-align: center;
+  margin: 30px;
 }
 
 /*& Carga de fotos */
 /* Alianzas */
 .joya1 {
-    background-image: url(../assets/img/alianza1.jpg);
+  background-image: url(../assets/img/alianza1.jpg);
 }
 
 .joya2 {
-    background-image: url(../assets/img/alianza2.jpg);
+  background-image: url(../assets/img/alianza2.jpg);
 }
 
 .joya3 {
-    background-image: url(../assets/img/alianza3.jpg);
+  background-image: url(../assets/img/alianza3.jpg);
 }
 
 /* Anillos */
 .joya4 {
-    background-image: url(../assets/img/anillo1.jpg);
+  background-image: url(../assets/img/anillo1.jpg);
 }
 
 .joya5 {
-    background-image: url(../assets/img/anillo2.jpg);
+  background-image: url(../assets/img/anillo2.jpg);
 }
 
 .joya6 {
-    background-image: url(../assets/img/anillo3.jpg);
+  background-image: url(../assets/img/anillo3.jpg);
 }
 
 /* Colgantes */
 .joya7 {
-    background-image: url(../assets/img/colgante1.jpg);
+  background-image: url(../assets/img/colgante1.jpg);
 }
 
 .joya8 {
-    background-image: url(../assets/img/colgante2.jpg);
+  background-image: url(../assets/img/colgante2.jpg);
 }
 
 .joya9 {
-    background-image: url(../assets/img/colgante3.jpg);
+  background-image: url(../assets/img/colgante3.jpg);
 }
 
 /*& estilo carrusel bootstraps */
 .carousel-size {
-    object-fit: cover;
-    height: 70vh;
+  object-fit: cover;
+  height: 70vh;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto Slab", serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 }
 
 .navBar {
-    background-color: #ee8481;
-    width: 100%;
-    height: 80px;
+  background-color: #ee8481;
+  width: 100%;
+  height: 80px;
 }
-
 .navBar ul {
-    float: right;
-    list-style: none;
-    margin-right: 30px;
+  float: right;
+  list-style: none;
+  margin-right: 30px;
 }
-
 .navBar ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 10px;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 10px;
 }
-
 .navBar ul li a {
-    text-decoration: none;
-    color: #6B3B3A;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 6px;
-    padding: 5px;
+  text-decoration: none;
+  color: #6B3B3A;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 5px;
 }
-
 .navBar ul li a:hover {
-    color: #ee8481;
-    background-color: #6B3B3A;
-    transition: 0.4s ease;
+  color: #ee8481;
+  background-color: #6B3B3A;
+  transition: 0.4s ease;
 }
 
 .logo {
-    position: absolute;
-    padding: 20px 50px;
+  position: absolute;
+  padding: 20px 50px;
 }
-
 .logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .logo__img {
-    height: 40px;
+  height: 40px;
 }
 
 .body_joyas {
-    background-image: url(../assets/img/bagr.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../assets/img/bagr.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section_contacto {
-    height: 80vh;
+  height: 80vh;
 }
 
 .tituloContacto {
-    text-align: center;
-    color: #6B3B3A;
-    font-size: larger;
-    padding: 40px;
-    font-size: 24px;
-    text-decoration: underline;
+  text-align: center;
+  color: #6B3B3A;
+  font-size: larger;
+  padding: 40px;
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 .textoContacto {
-    text-align: center;
-    font-size: larger;
-    color: #6B3B3A;
-    padding: 10px 20px;
+  text-align: center;
+  font-size: larger;
+  color: #6B3B3A;
+  padding: 10px 20px;
 }
 
 .formContacto {
-    color: blue;
-    width: 400px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 5px;
+  color: blue;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
 }
 
 .formInput {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: #6B3B3A solid 1px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: #6B3B3A solid 1px;
 }
 
 .botonFormulario {
-    color: #F0CBCA;
-    background-color: #6B3B3A;
-    margin: auto;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  color: #F0CBCA;
+  background-color: #6B3B3A;
+  margin: auto;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 .botonFormulario:hover {
-    background-color: #ee8481;
-    color: #6B3B3A;
+  background-color: #ee8481;
+  color: #6B3B3A;
 }
 
 .sectionNosotros {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    margin: 100px 20px;
-    border-radius: 15px;
-    height: 70vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 100px 20px;
+  border-radius: 15px;
+  height: 70vh;
 }
 
 .nosotros {
-    color: #6B3B3A;
-    font-size: 24px;
-    margin-bottom: 80px;
-    text-align: center;
-    text-decoration: underline;
+  color: #6B3B3A;
+  font-size: 24px;
+  margin-bottom: 80px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .articleNosotros {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .articleImg {
-    width: 400px;
-    margin-right: 20px;
+  width: 400px;
+  margin-right: 20px;
 }
 
 .articleText1 {
-    color: #6B3B3A;
-    font-size: 25px;
+  color: #6B3B3A;
+  font-size: 25px;
 }
 
 .section_talles {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 70vh;
 }
 
 .articleTalles {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 30px;
-    border-radius: 15px;
-    width: 600px;
-    height: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;
+  height: auto;
 }
 
 .medir {
-    color: #6B3B3A;
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 30px;
-    font-size: 24px;
+  color: #6B3B3A;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-size: 24px;
 }
 
 .medirText {
-    color: #6B3B3A;
-    font-size: 18px;
-    margin-bottom: 50px;
-    text-align: center;
+  color: #6B3B3A;
+  font-size: 18px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .talleImg {
-    height: 400px;
+  height: 400px;
 }
 
 .instruccion {
-    color: #6B3B3A;
-    list-style: lower-alpha;
+  color: #6B3B3A;
+  list-style: lower-alpha;
 }
 
 .instruccion1 {
-    padding: 15px;
+  padding: 15px;
 }
 
 footer {
-    height: 18vh;
-    margin-top: 15px;
-    background-color: #ee8481;
+  height: 18vh;
+  margin-top: 15px;
+  background-color: #ee8481;
 }
 
 .container_footer {
-    display: flex;
-    width: 100%;
-    height: 80%;
-    justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: space-evenly;
 }
 
 .sociales,
 .whatsapps {
-    width: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 15px;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .footer_logo {
-    color: #6B3B3A;
-    font-size: 40px;
+  color: #6B3B3A;
+  font-size: 40px;
 }
 
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #F0CBCA;
+}
+
+@media (max-width: 1000px) {
+  /** responsive nav bar */
+  .navbar bg-body-tertiary fixed-top {
+    display: none;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+  .navBar ul li a {
+    font-size: 17px;
+  }
+  /** responsive joyas*/
+  .container_card {
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: #F0CBCA;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .articleNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .sectionNosotros {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 100px 20px;
+    border-radius: 15px;
+    height: auto;
+  }
 }
-
-@media (max-width: 900px) {
-
-    /** responsive nav bar */
-    .navbar bg-body-tertiary fixed-top {
-        display: none;
-    }
-
-    .logo {
-        padding-left: 15px;
-    }
-
-    .navBar ul a {
-        text-decoration: none;
-        color: #6B3B3A;
-        font-size: 15px;
-        text-transform: uppercase;
-        border-radius: 6px;
-        padding: 5px;
-    }
-
-    /** responsive joyas*/
-    .container_card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .articleNosotros {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sectionNosotros {
-        background-color: rgba(255, 255, 255, 0.3);
-        padding: 20px;
-        margin: 100px 20px;
-        border-radius: 15px;
-        height: auto;
-    }
-}
-
 @media (max-width: 570px) {
-    .navBar {
-        display: none;
-    }
-
-    .container_footer {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 80%;
-        justify-content: space-evenly;
-    }
-
-    .copyright {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #F0CBCA;
-    }
-
-    .container_card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .section_talles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .articleNosotros {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section_contacto {
-        height: auto;
-    }
+  .navBar {
+    display: none;
+  }
+  .container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+  }
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F0CBCA;
+  }
+  .container_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section_talles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .articleNosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .section_contacto {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
