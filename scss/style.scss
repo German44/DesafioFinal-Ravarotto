@@ -244,6 +244,11 @@ footer {
     align-items: center;
     gap: 15px;
 
+    a:hover {
+        transform: scale(1.1);
+    }
+
+
 }
 
 .footer_logo {
@@ -263,7 +268,8 @@ footer {
 
 @media(max-width:1000px) {
 
-    /** responsive nav bar */
+    //* responsive nav bar
+
     .navbar bg-body-tertiary fixed-top {
         display: none;
     }
@@ -284,7 +290,7 @@ footer {
 
 
 
-    /** responsive joyas*/
+    //* responsive joyas
     .container_card {
         display: flex;
         flex-wrap: wrap;

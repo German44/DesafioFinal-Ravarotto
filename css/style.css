@@ -46,8 +46,6 @@
   margin: 30px;
 }
 
-/*& Carga de fotos */
-/* Alianzas */
 .joya1 {
   background-image: url(../assets/img/alianza1.jpg);
 }
@@ -60,7 +58,6 @@
   background-image: url(../assets/img/alianza3.jpg);
 }
 
-/* Anillos */
 .joya4 {
   background-image: url(../assets/img/anillo1.jpg);
 }
@@ -73,7 +70,6 @@
   background-image: url(../assets/img/anillo3.jpg);
 }
 
-/* Colgantes */
 .joya7 {
   background-image: url(../assets/img/colgante1.jpg);
 }
@@ -86,7 +82,6 @@
   background-image: url(../assets/img/colgante3.jpg);
 }
 
-/*& estilo carrusel bootstraps */
 .carousel-size {
   object-fit: cover;
   height: 70vh;
@@ -297,6 +292,10 @@ footer {
   align-items: center;
   gap: 15px;
 }
+.sociales a:hover,
+.whatsapps a:hover {
+  transform: scale(1.1);
+}
 
 .footer_logo {
   color: #6B3B3A;
@@ -311,7 +310,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  /** responsive nav bar */
   .navbar bg-body-tertiary fixed-top {
     display: none;
   }
@@ -321,7 +319,6 @@ footer {
   .navBar ul li a {
     font-size: 17px;
   }
-  /** responsive joyas*/
   .container_card {
     display: flex;
     flex-wrap: wrap;
