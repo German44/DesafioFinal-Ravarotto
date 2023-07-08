@@ -57,10 +57,10 @@
                     background-color: $color-text;
                     transition: .4s ease;
                 }
+
             }
         }
     }
-
 }
 
 .logo {
@@ -222,6 +222,49 @@
     padding: 15px;
 }
 
+//* Estilo Site Map
+
+.sitemap_container {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sitemap_list {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        .sitemap_page {
+            list-style: none;
+
+            .sitemap_title {
+                text-decoration: none;
+                color: $color-text;
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+
+            ul li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 900;
+                    font-size: 1rem;
+
+                }
+            }
+        }
+    }
+
+}
+
+
 //* comienzo estilo footer
 
 footer {
@@ -312,6 +355,17 @@ footer {
         border-radius: 15px;
         height: auto;
     }
+
+    // * responsive site map
+
+
+    .sitemap_list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 //* version Mobile  570px medida minima bootstrap
@@ -369,5 +423,18 @@ footer {
     .section_contacto {
         height: auto;
     }
+
+    // * responsive site map
+
+
+    // .sitemap_list {
+    //     width: 80%;
+    //     height: auto;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+
+
+    // }
 
 }
