@@ -109,6 +109,10 @@
   line-height: 80px;
   margin: 0 10px;
 }
+.navBar ul li .active {
+  color: #ee8481;
+  background-color: #6B3B3A;
+}
 .navBar ul li a {
   text-decoration: none;
   color: #6B3B3A;
@@ -170,7 +174,6 @@
   backdrop-filter: blur(10px);
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
   border-radius: 5px;
 }
 
@@ -282,9 +285,11 @@
 .sitemap_container .sitemap_list {
   width: 90%;
   height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 150px;
+  justify-content: center;
 }
 .sitemap_container .sitemap_list .sitemap_page {
   list-style: none;
@@ -342,6 +347,25 @@ footer {
   background-color: #F0CBCA;
 }
 
+.sitemap_btn {
+  width: auto;
+  display: flex;
+  justify-content: end;
+}
+.sitemap_btn a {
+  background-color: #F0CBCA;
+  color: #6B3B3A;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0 5px;
+  transition: 0.4s ease;
+}
+.sitemap_btn a:hover {
+  background-color: #6B3B3A;
+  color: #F0CBCA;
+}
+
 @media (max-width: 1000px) {
   .navbar bg-body-tertiary fixed-top {
     display: none;
@@ -369,13 +393,6 @@ footer {
     margin: 100px 20px;
     border-radius: 15px;
     height: auto;
-  }
-  .sitemap_list {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 @media (max-width: 570px) {
@@ -415,6 +432,15 @@ footer {
   }
   .section_contacto {
     height: auto;
+  }
+  .sitemap_container .sitemap_list {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    justify-content: center;
   }
 }
 

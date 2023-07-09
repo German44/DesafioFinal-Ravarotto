@@ -43,6 +43,11 @@
             line-height: 80px;
             margin: 0 10px;
 
+            .active{
+                color: $color-principal;
+                background-color: $color-text;
+            }
+
             a {
                 text-decoration: none;
                 color: $color-text;
@@ -52,7 +57,7 @@
                 border-radius: 6px;
                 padding: 5px;
 
-                &:hover {
+                &:hover{
                     color: $color-principal;
                     background-color: $color-text;
                     transition: .4s ease;
@@ -62,6 +67,11 @@
         }
     }
 }
+
+// .active{
+//     color: $color-principal;
+//     background-color: $color-text;
+// }
 
 .logo {
     position: absolute;
@@ -112,7 +122,6 @@
     backdrop-filter: blur(10px);
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
     border-radius: 5px;
 }
 
@@ -234,9 +243,11 @@
     .sitemap_list {
         width: 90%;
         height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 150px;
+        justify-content: center;
 
         .sitemap_page {
             list-style: none;
@@ -307,6 +318,29 @@ footer {
 
 }
 
+.sitemap_btn {
+    width: auto;
+    display: flex;
+    justify-content: end;
+
+    a {
+        background-color: $color-secundario;
+        color: $color-text;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 4px;
+        padding: 0 5px;
+        transition: .4s ease;
+
+        &:hover {
+            background-color: $color-text;
+            color: $color-secundario;
+
+        }
+
+    }
+}
+
 //* version tablets
 
 @media(max-width:1000px) {
@@ -356,16 +390,6 @@ footer {
         height: auto;
     }
 
-    // * responsive site map
-
-
-    .sitemap_list {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
 }
 
 //* version Mobile  570px medida minima bootstrap
@@ -426,15 +450,18 @@ footer {
 
     // * responsive site map
 
+    .sitemap_container {
 
-    // .sitemap_list {
-    //     width: 80%;
-    //     height: auto;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
+        .sitemap_list {
+            width: 90%;
+            height: auto;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            gap: 30px;
+            justify-content: center;
+        }
 
-
-    // }
+    }
 
 }
